@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <title> Contact Us </title>
+</head>
+<style>
+        
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color:rgb(51, 51, 51);
+        background-color: rgb(141, 213, 241);
+    }
+    
+    h1, h3 {
+        text-align: center;
+        color: white;
+    }
+    
+    form {
+        background: white;             max-width: 800px;
+        margin: 10 auto;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 25px black; 
+        border: 2px solid rgb(141, 213, 241);
+    }
+    div {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: inline-block;
+        width: 50px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #00bfff;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #00bfff;
+        border-radius: 5px;
+        font-size: 1rem;
+        background: #f0f8ff;
+    }
+    
+    textarea {
+        resize: vertical;
+    }
+    
+    input[type="radio"]{
+        margin-right: 10px;
+    }
+     
+    input[type="submit"] {
+        background: #00bfff;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    input[type="submit"]:hover {
+        background: #87ceeb;
+        border: 2px solid whitesmoke;
+    }
+    
+</style>
+<body>
+    <h1> Contact Us </h1>
+    <form action="">
+        <div>
+            <label for="name">Name* : </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="email">Email* : </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone No. :</label>
+            <input type="number" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="id">Registratoin No.* :</label>
+            <input type="number" name="id" id="id" required>
+        </div>
+        <div>
+            <label for="age">Age* :</label>
+            <input type="number" name="age" id="age" required>
+        </div>
+        <div>
+            <label for="subject">Subject : </label>
+            <input type="radio" name="subject"> CSE
+            <input type="radio" name="subject"> Biotech
+            <input type="radio" name="subject"> Civil
+            <input type="radio" name="subject"> MCA
+            <input type="radio" name="subject"> MSc
+            <input type="radio" name="subject"> AI
+        </div>
+        <div>
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" cols="30" rows="3" placeholder=" enter your query"></textarea>
+        </div>
+        <input type="submit" name="" id="submit">
+    </form>
+</body>
+
+</html>

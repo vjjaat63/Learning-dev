@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    font-weight: 600;
+    border: 2px solid #c1361d ;
+    color: #c1361d;
+    padding: 6px;
+    padding-right: 40px !important;
+    border-radius: 3px;
+    width: 20%;
+    
+}
+.csr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-link a , 
+.header-link a:hover, 
+.header-link a:active, 
+.header-link a:visited{
+    color:#c1361d;
+    text-decoration: none;
+}
+.iie{
+    width: 220px;
+    font-size: small;
+}
+.csr img{
+
+    width: 22px;
+    height: 24px;
+    padding: 3px;
+}
+
+.header .header-items{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+}
+.navbar nav ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+}
+.navbar nav ul li{
+    list-style-type: none;
+}
+
+#second-Nav{
+    border: 1px solid black;
+    background-color: #f0f0f0;
+}
+.navbar-container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar-links li {
+    padding: 10px 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #f0a500; 
+}
+
+
+.moving-container{
+    height: 10%;
+    background-color:#f4f0eb;
+    display: flex;
+
+    
+}
+.moving-container .announcement-title{
+    background-color: black;
+    color: white;
+    width: 15%;
+    
+}
+
+.moving-container .announcement-title span{
+    font-size: 26px;
+    padding: 3px;
+}
+
+.moving-container .moving-text{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;        
+    font-style: italic;
+    padding: 5px;
+}
+
+
+
+
+
+.hero{
+    height: 80vh;
+    background-image: url("https://nitw.ac.in/api/static/files/welcome_to_NIT_WARANGAL_2023-4-15-16-35-49.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    position: relative;
+}
+section {
+    margin-left: 5px;
+    display: flex;
+    max-width: 80%;
+    gap:12px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section h2 {
+    font-size: large;
+    margin-bottom: 10px; 
+}
+
+.news-header {
+    width: 100%;
+    padding-left: 3px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 15px;
+    margin-top: 10px;
+}
+
+a,
+a:active,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 200px;
+    padding: 10px; 
+    border-radius: 5px;
+    
+}
+
+.news-card:hover {
+    background-color: #f0f0f0;
+}
+
+.news-card h4 {
+    margin: 10px 0; 
+}
+
+.news-card img {
+    border-radius: 5px;
+    width: 100%; 
+    height: auto;
+}
+
+.news-card p {
+    font-size: small;
+    margin-bottom: 10px; 
+}
+    .date_time {
+    font-size: smaller;
+    color: #888;
+}
+
+.EVENT {
+    margin-top: 20px; 
+    background-color: antiquewhite;
+}
+
+.events {
+    margin-top: 20px;
+}
+
+footer{
+    display: block;
+    margin: auto;
+    background-color: black;
+    color: white;
+    height: 30px;
+    text-align: center;
+  }

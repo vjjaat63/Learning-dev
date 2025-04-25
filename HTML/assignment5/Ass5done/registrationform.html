@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title> Registration Form </title>
+    </head>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color:rgb(51, 51, 51);
+            background-color: rgb(141, 213, 241);
+        }
+        
+        h1, h3 {
+            text-align: center;
+            color: white;
+        }
+        
+        form {
+            background: white;             max-width: 800px;
+            margin: 10 auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 10px 10px 25px black; 
+            border: 2px solid rgb(141, 213, 241);
+        }
+        h2{
+            color: rgb(141, 213, 241);
+        }
+        
+        div {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #00bfff;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #00bfff;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #f0f8ff;
+        }
+        
+        textarea {
+            resize: vertical;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+         
+        input[type="submit"],
+        input[type="reset"] {
+            background: #00bfff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        
+        input[type="submit"]:hover {
+            background: #87ceeb;
+            border: 2px solid whitesmoke;
+        }
+        
+        input[type="reset"] {
+            background: tomato;
+        }
+        
+        input[type="reset"]:hover {
+            background: red;
+        }
+    </style>
+    <body>
+        <h1> Registration Form </h1>
+        <h3>Please fill each section carefully !</h3>
+        <form action="">
+            <div>
+                <label for="name">Name* : </label>
+                <input type="text" name="name" id="name" placeholder="enter your name" required>
+            </div>
+            <div>
+                <label for="email">Email* : </label>
+                <input type="email" name="email" id="email" placeholder="enter your college email" required>
+            </div>
+            <div>
+                <label for="id">Student ID* : </label>
+                <input type="text" name="id" id="id" placeholder="enter your id" required>
+            </div>
+            <div>
+                <label for="event">Select Event* : </label>
+                <select name="event" id="event" required>
+                    <option value="none"> ---please select an option---</option>
+                    <option value="Event1"> Event1 </option>
+                    <option value="Event2"> Event2 </option>
+                    <option value="Event3"> Event3 </option>
+                    <option value="Event4"> Event4 </option>
+                    <option value="Event5"> Event5 </option>
+                    <option value="Event6"> Event6 </option>
+                    <option value="Event7"> Event7 </option>
+                    <option value="Event8"> Event8 </option>
+                    <option value="Event9"> Event9 </option>
+                    <option value="Event10"> Event10 </option>
+                </select>
+            </div>
+            <div></div>
+                <label for="attendance">Mode of Attendence : </label>
+                <input type="radio" value="in-person" name="attendance"> In-person
+                <input type="radio" value="virtual" name="attendance"> Virtual
+            </div>
+            <div class="black">
+               <h2> Additional Services : </h2>
+                <input type="checkbox" name="accomodation" id="checkbox">
+                <label for="accomodarion">Accomodation</label><br>
+                <input type="checkbox" name="services" id="transportation">
+                <label for="transportation">Transportation</label><br>
+                <input type="checkbox" name="services" id="lunch">
+                <label for="lunch">Lunch</label> <br>
+                <input type="checkbox" name="services" id="water">
+                <label for="water">Water</label> <br>
+                <input type="checkbox" name="services" id="rooom">
+                <label for="rooom">Room</label> <br>
+            </div>
+            <label for="comments">Comments: </label>
+            <textarea name="comments" id="comments" cols="30" rows="3" placeholder="any other service"></textarea>
+            <br>
+           <div></div> <input type="submit" id="submit">
+            <input type="reset" id="reset">
+
+        </form>
+    </body>
+</html>

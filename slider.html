@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <p id="counter"></p>
+    <button id="red" onclick="color('red')">Click Me</button>
+    <button id="blue" onclick="color('blue')">Click Me</button>
+    <button id="green" onclick="color('green')">Click Me</button>
+
+    <script>
+        function color(c) {
+            
+        if(c=='red')
+        document.getElementById('counter').innerHTML = 'rgb(256, 0, 0)';
+        if(c=='blue')
+        document.getElementById('counter').innerHTML = 'rgb(0, 256, 0)';
+        if(c=='green')
+        document.getElementById('counter').innerHTML = 'rgb(0, 0, 256)';
+
+    document.getElementById('body').style.backgroundColor = c;
+        }
+    </script>
+</body>
+</html>

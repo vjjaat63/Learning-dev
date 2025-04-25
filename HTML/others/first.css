@@ -1,0 +1,105 @@
+h3,
+h4 {
+    text-align: right;
+}
+
+h1:hover {
+    cursor: cell;
+    color: red;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gSAVChSYEeJRTt47jOKZILE1zo7jppVjEw&s);
+}
+
+article {
+    color: whitesmoke;
+}
+
+body {
+    cursor: help;
+    margin: 10px;
+    color: green;
+    background-image: url(https://r4.wallpaperflare.com/wallpaper/869/846/349/son-goku-dragon-ball-super-ultra-instinct-goku-dragon-ball-wallpaper-a9a0a82d013a0d5b0687486f4001d68d.jpg);
+    background-size: 100% 110%;
+    background-attachment: fixed;
+}
+
+span {
+    background-color: rgb(255, 192, 203, 1);
+    border: thick inset green;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: blueviolet;
+    text-align: center;
+    border: 4px double white;
+    background: rgb(135, 7, 7, 0.1);
+}
+
+h2 {
+    position: sticky;
+    color: yellow;
+    width: 400px;
+    margin: 0;
+    text-decoration: line-through;
+}
+
+p {
+    color: rgb(0, 0, 0, 0.7);
+    transform:scale();
+    cursor: grabbing;
+    border: 3px solid white;
+    font-style: oblique;
+    text-shadow: 2px 3px 4px rgb(130, 101, 101);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqayDq7Vu2Jfb9LMmqcY7EYyvynnNNL85Bmg&s);
+    background-repeat: no-repeat;
+    width: 300px;
+}
+
+.overflow {
+    position: absolute;
+    top: 950px;
+    left: 70%;
+    border: 2px solid red;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    color: white;
+}
+
+.overflow:hover {
+    transform: rotate(20deg);
+    color: red;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/424/839/753/one-piece-roronoa-zoro-swordsman-sword-katana-hd-wallpaper-preview.jpg);
+    background-size: 100% 100%;
+}
+
+a {
+    cursor: crosshair;
+    border: 1px solid black;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+img {
+    border: thin none black;
+    border-radius: 5px;
+}
+
+button {
+    background-color: white;
+    width: 10vh;
+}
+
+video {
+    border: 1px none white;
+    border-radius: 14px;
+}
+.ss3{
+    position: fixed;
+    left: 80%;
+    top: 100px;
+}

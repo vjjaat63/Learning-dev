@@ -1,0 +1,43 @@
+body{
+    border-left: 2px solid grey;
+    padding : 10px;
+}
+h1,.subh{
+    text-align: center;
+}
+h1{
+    margin-top: 70px;
+    margin-bottom: 3px;
+}
+h2{
+    color: rgb(18, 93, 214);
+    border-bottom: 3px solid rgb(18, 93, 214);
+    
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid grey;
+}
+th,td{
+    padding: 8px;
+    border: 2px solid grey;
+}
+th{
+    color: white;
+    background-color: rgb(18, 93, 214);
+}
+td{
+    padding-left: 10px;
+}
+ul{
+   padding-left: 15px;
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(18, 93, 214);
+}
+#l1{
+    background-color: rgba(128, 128, 128, 0.2);
+}

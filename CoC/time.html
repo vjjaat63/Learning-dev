@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 80px;
+            height: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <button id="show">show time</button>
+    <button id="hide">hide time</button>
+    <div id="time">
+
+    </div>
+
+    <script>
+        
+    document.getElementById('show').addEventListener('click',()=>{
+        document.getElementById('time').style.display = 'block';
+        let tim = new Date;
+        document.getElementById('time').textContent = tim.toLocaleTimeString();
+        setInterval(() => {
+            let tim = new Date;
+            let time =  tim.toLocaleTimeString();
+        document.getElementById('time').textContent = time;
+        }, 1000)
+    });
+
+        document.getElementById('hide').addEventListener('click',()=>{
+            document.getElementById('time').style.display = 'none';
+        })
+    </script>
+</body>
+</html>

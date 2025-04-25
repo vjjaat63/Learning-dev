@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full-Width Image Slider with JavaScript</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+ }
+
+ .slides {
+    display: flex;
+    transition: all 0.5s ease-in-out; 
+    width: 100vw;
+    height: 50vh;
+ }
+
+ .slide {
+    min-width:  100vw;
+    height: 100%;
+ }
+
+ .slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+ }
+
+ .controls {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+ }
+
+ .control-btn {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    font-size: xx-large;
+    color: black;
+    border: none;
+ }
+</style>
+</head>
+<body>
+
+<div class="slider">
+  <div class="slides">
+    <div class="slide"><img src="https://plus.unsplash.com/premium_photo-1712685912266-aa85a267a419?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1"></div>
+    <div class="slide"><img src="https://plus.unsplash.com/premium_photo-1712685912402-ab376db28e59?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 2"></div>
+    <div class="slide"><img src="https://plus.unsplash.com/premium_photo-1712016875004-6a4ad04d53e3?q=80&w=2066&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3"></div>
+  </div>
+  <div class="controls">
+    <button class="control-btn" id="prev">❮</button>
+    <button class="control-btn" id="next">❯</button>
+  </div>
+</div>
+
+<script>
+    const slides = document.querySelector(".slides");
+    const totalSlides = document.querySelectorAll(".slide").length;
+    const prev = document.querySelector('#prev');
+    const next = document.querySelector('#next');
+
+    let index = 0;
+
+    function show(newIdx) {
+        if (newIdx >= totalSlides) index = 0;
+        else if (newIdx < 0) index = totalSlides - 1;
+        else index = newIdx;
+
+        // Correcting the syntax error in translateX
+        slides.style.transform = `translateX(-${index * 100}vw)`; // Backticks used correctly for template literal
+    }
+
+    prev.addEventListener('click', () => show(index - 1));  // Changed to decrement index
+    next.addEventListener('click', () => show(index + 1));
+
+    // Automatically change slide every 5 seconds
+    setInterval(() => show(index + 1), 1000);
+</script>
+
+</body>
+</html>

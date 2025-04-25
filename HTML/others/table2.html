@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td{
+            
+            text-align: center;
+            border: 1px solid yellow;
+            border-collapse: collapse;
+        }
+        .table1{
+            color: white;
+            background-color: black;
+            width: 100%;
+        }
+        .table2{
+            border: 2px solid blue;
+            color: black;
+            background-color: white;
+            width: 100%;
+            text-align: center;
+        }
+        .table2 td{
+            border-color: tomato;
+        }
+        caption{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table class="table1">
+        <tr>
+            <td> 1 </td>
+            <td> 5 </td>
+            <td> 8 </td>
+        </tr>
+        <tr>
+            <td> 2 </td>
+            <td > 6 </td>
+            <td style="background-color: blue;"> 9 </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <table class="table2">
+                    <caption>Table Data</caption>
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>E</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>H</td>
+                        <td>I</td>
+                    </tr>
+                    <tr>
+                        <td>J</td>
+                        <td>K</td>
+                        <td>L</td>
+                    </tr>
+                </table>
+            </td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td> 4 </td>
+            <td> 7 </td>
+            <td> 11 </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

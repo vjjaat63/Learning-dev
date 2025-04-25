@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goku</title>
+    <style>
+      img {
+        width: 400px;
+        height: 220px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="time"></h1>
+
+    <ul id="goku">
+      <li>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu1t7ogUO4m2F0qPb4cMx2M-pT5xybHMqoXw&s"
+          alt=""
+          id="one"
+        />
+      </li>
+      <li>
+        <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQk8echCQLMHPAz8I7pC8YXWTBaDVxGa9Jmg&s
+        alt="" id="two">
+      </li>
+      <li>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx1NYMPhd4sLbf7JAeQX1SyUeL8WLHH-F6ww&s"
+          alt=""
+          id="three"
+        />
+      </li>
+      <li>
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/109/220/12/dragon-ball-dragon-ball-super-ultra-instinct-son-goku-wallpaper-preview.jpg"
+          alt=""
+          id="five"
+        />
+      </li>
+      <li>
+        <img
+          src="https://motionbgs.com/i/c/364x205/media/1353/gohan-beast-mode.jpg"
+          alt=""
+          id="six"
+        />
+      </li>
+      <li>
+        <img
+          src="https://images5.alphacoders.com/132/1329226.jpeg"
+          alt=""
+          id="seven"
+        />
+      </li>
+      <li>
+        <img
+          src="https://motionbgs.com/i/c/364x205/media/6456/vegeta-dragon-ball.jpg"
+          alt=""
+          id="eight"
+        />
+      </li>
+      <li>
+        <img
+          src="https://i.pinimg.com/originals/c2/39/17/c23917fd598cc169709c6c003bf9cd08.png"
+          alt=""
+          id="nine"
+        />
+      </li>
+      <li>
+        <img
+          src="https://i.pinimg.com/736x/dd/77/ac/dd77ac8fbe876679a29be071106e60d2.jpg"
+          alt=""
+          id="ten"
+        />
+      </li>
+      <li><a href="https://www.google.com" id="google">Google</a></li>
+    </ul>
+  </body>
+
+  <script>
+    setInterval(() => {
+      let t = document.getElementById("time");
+      let time = new Date();
+      t.innerHTML = time.toLocaleTimeString();
+    }, 1000);
+
+    document.getElementById("google").addEventListener("click", (e) => {
+      e.preventDefault();
+    });
+
+    document.getElementById("goku").addEventListener("click", (e) => {
+      e.target.parentNode.remove();
+    });
+  </script>
+</html>

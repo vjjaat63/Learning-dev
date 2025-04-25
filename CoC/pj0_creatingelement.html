@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creating HTML divs </title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    let b = document.getElementsByTagName("body");
+    b[0].style.backgroundColor = "black";
+    function col() {
+        let a = Math.floor(Math.random() * 255 - 0);
+        let b = Math.floor(Math.random() * 255 - 0);
+        let c = Math.floor(Math.random() * 255 - 0);
+        return `rgb(${a}, ${b}, ${c})`;
+    }
+    
+    function createElement(id,bankai, url) {
+        const div = document.createElement('div');
+        
+        const textdiv = document.createElement('div');
+        const imgdiv = document.createElement('div');
+        
+        const img = document.createElement('img');
+        div.id = id;
+        img.src = url;
+        img.style.width = '31vw';
+        img.style.height = '33vh';
+        const text = bankai;
+        div.style.padding = '5px';
+
+        setInterval( () =>{
+            div.style.color = col();
+            div.style.backgroundColor = col();
+        },100)
+
+        div.style.marginBottom = '10px';
+        div.style.display = 'inline-block';
+        imgdiv.append(img);
+        textdiv.append(text);
+        
+        div.append(imgdiv)
+        div.append(textdiv)
+        // div.textContent = text;
+        document.body.appendChild(div);
+    }
+    
+    createElement('Ichigo Kurosaki', 'Tensa Zangetsu','https:media.tenor.com/ho9OYcWYuQ4AAAAM/ichigo-ichigo-kurosaki.gif');
+    createElement('Byakuya Kuchiki', 'Senbonzakura Kageyoshi','https://media.tenor.com/OCYS3xa1dZEAAAAM/senbonzakura-kageyoshi-bleach-bankai.gif');
+    createElement('Kenpachi Zaraki', 'Nozarashi','https://static.wikia.nocookie.net/278980ef-c72b-4a3f-91fd-91128dd438b7/scale-to-width/755');
+    createElement('Sosuke Aizen', 'Kyoka Suigetsu','https://i.pinimg.com/originals/62/6e/db/626edb1f706ad87f7ec2716e32132f68.gif');  // Though rarely seen, Aizen's Bankai is hinted at but not fully revealed.
+    createElement('Renji Abarai', 'Soo Zabimaru','https://media.tenor.com/PyexpPn5ADYAAAAM/renji-abarai-renji.gif');
+    createElement('Toshiro Hitsugaya', 'Daiguren Hyorinmaru','https://i.pinimg.com/originals/c3/ca/a8/c3caa8ebaca2f60da4a2b0615b4c4b59.gif');
+    createElement('Retsu Unohana', 'Minazuki','https://steamuserimages-a.akamaihd.net/ugc/2083534998829104679/9DED1BB9B89C1822B90ABCC1ACDC1AD7CA8F2D2E/?imw=540&imh=300&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
+    createElement('Zoro', 'Purgatory Onigiri','https://i.makeagif.com/media/4-30-2023/M-VWdX.gif');
+    createElement('Gogeta', 'Kamehameha','https://i.pinimg.com/originals/d7/49/18/d749180e9ee585a68f761fa83c155522.gif');
+    createElement('Shunsui Kyoraku', 'Katen Kyokotsu: Karamatsu Shinju','https://media.tenor.com/vetK3yQaefkAAAAM/kyoraku-shunsui.gif');
+    createElement('Rukia Kuchiki', 'Hakka no Togame','https://i.makeagif.com/media/8-13-2023/K36TmW.gif');
+    createElement('Mayuri Kurotsuchi', 'Konjiki Ashisogi Jizo','https://media.tenor.com/zyueNIJUmuMAAAAM/anime-bankai.gif');
+    createElement('Sajin Komamura', 'Kokujō Tengen Myō\'ō','https://64.media.tumblr.com/6c291faf520876890f40ef0656b83e5a/364554d93c5a9093-5d/s640x960/c46423ade1962376d2d3c59078d166209ce6d09a.gifv');
+    createElement('Shinji Hirako', 'Sakanade','https://media.tenor.com/a4PVIakThp0AAAAM/shinji-hirako.gif');  // His Shikai is more prominent; Bankai isn't revealed in the anime.
+    createElement('Kisuke Urahara', 'Kannonbiraki Benihime Aratame','https://i.pinimg.com/originals/9b/42/a4/9b42a4a2c3abab03ff12d103329ee7ce.gif');
+    createElement('Kensei Muguruma', 'Tekken Tachikaze','https://media.tenor.com/ajtlQvPeDUgAAAAM/bleach-kensei-bankai.gif');
+    createElement('Ikkaku Madarame', 'Ryūmon Hōzukimaru','https://media.tenor.com/8sS5G0IWYIQAAAAM/bankai-bleach.gif');
+    createElement('Gin Ichimaru', 'Kamishini no Yari','https://media.tenor.com/Kn1vuHbD7ZIAAAAM/bankai-sword.gif');
+    createElement('Yoruichi Shihōin', 'N/A','https://gifdb.com/images/thumbnail/yoruichi-bleach-anime-lightning-shunko-power-hgazmcnprb8jvg6h.gif');  // Yoruichi's Bankai is never shown.
+    
+</script>
+
+</html>

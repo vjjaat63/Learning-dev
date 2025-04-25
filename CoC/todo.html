@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            background-color: bisque;
+        }
+        ul{
+            list-style: none;
+        }
+        #list li{
+            color: green;
+            padding: 5px;
+            margin: 5px;
+            width: 100px;
+        }
+        #list li:hover{
+            color: gray;
+            cursor: pointer;
+        }
+        #ls li{
+            color: red;
+            padding: 5px;
+            margin: 5px;
+            width: 100px;
+            text-decoration: line-through;
+        }
+        button{
+            background-color: transparent;
+            color:blue;
+            border: none;
+            display: block;
+            margin: 20px auto;
+            border-bottom: 2px solid purple;
+        }
+        button:hover{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="bt">Add To do </button>
+    <ul id="list">
+        <li>homework</li>
+        <li>cricket</li>
+        <li>game</li>
+        <li>coding</li>
+    </ul>
+    <button id="btn">Done</button>
+    <ul id="ls">
+        <li>sleep</li>
+    </ul>
+    <script>
+        document.getElementById("bt").addEventListener('click',()=>{
+            let list = document.getElementById("list");
+            let task = document.createElement('li');
+            task.textContent = prompt("enter the new task");
+
+            list.appendChild(task)
+        })
+
+        
+        document.getElementById("list").addEventListener('click',(rem)=>{
+            if(rem.target.tagName === 'LI'){
+                let data = rem.target.textContent;
+                let tsk = document.createElement('li');
+                tsk.textContent = data;
+                document.getElementById('ls').appendChild(tsk);
+                rem.target.remove();
+            }
+        })
+        
+    </script>
+</body>
+</html>

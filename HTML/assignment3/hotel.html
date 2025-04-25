@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Application Form</title>
+</head>
+<style>
+    body {
+        background-image: url(https://images.unsplash.com/photo-1517840901100-8179e982acb7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-attachment: fixed;
+        text-shadow: 3px 3px 10px black;
+        background-size: 100% 100%;
+        font-weight: 1000;
+        margin: 0%;
+        color: rgb(236, 253, 4);
+        padding-left: 30px;
+        color: white;
+    }
+
+    h1 {
+        color: white;
+        border: 1px none Black;
+        text-align: center;
+        padding: 0%;
+    }
+
+    h3 {
+        text-transform: capitalize;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+        display: inline-block;
+        padding: 30px 20px 30px 10px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    div {
+        padding: 15px;
+    }
+
+    button {
+        color: white;
+        border-radius: 5px;
+        border-color: red;
+        background-color: rgb(180, 58, 58);
+    }
+
+    #submit {
+        color:white;
+        background-color: black;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .active{
+        color: red;
+    }
+    li{
+        display: inline-block;
+        margin: 30px 30 0 0 ;
+    }
+    header{
+        height: 20mm;
+    }
+    img{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    label {
+        display: inline-block;
+        width: 100px;
+    }
+</style>
+<header>
+    <ul>
+        <li><a href="home.html" >Home</a></li>
+        <li><a href="heritage.html"> Heritage</a></li>
+        <li><a href="imagegallery.html">Gallery</a></li>
+        <li><a href="hotel.html" class="active">Hotels</a></li>
+        <li><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4de51b119987485.60a8b8bad2294.jpg" width="200"></li>
+    </ul>
+</header>
+<body>
+    <h1> Registration Form </h1>
+    <h3>
+        Please fill every section carefully !
+    </h3>
+    <form>
+        <p>
+        <div class="name">
+            <label for="name">Name* </label>
+            <input type="text" name="name" id="name" placeholder="enter your name" required>
+        </div>
+        <div name="age">
+            <label for="age">Age*</label>
+            <input type="number" name="age" id="age" required>
+        </div>
+        <div>
+            <label for="none">Phone No*</label>
+            <input type="number" required>
+        </div>
+        <div>
+            <label for="emails">Email: </label>
+            <input type="email" name="emails">
+        </div>
+        <div name="gender">
+            <label for="gemder">Gender</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label> Duration : </label>
+            <select>
+                <option value="choose">--please choose an option--</option>
+                <option value="1-2days">1-2days</option>
+                <option value="3-5days">3-5days</option>
+                <option value="1week">1week</option>
+                <option value="1-2weeks">1-2weeks</option>
+                <option value="2weeks">2weeks</option>
+                <option value="3weeks">3weeks</option>
+                <option value="1month">1month</option>
+            </select>
+        </div>
+        <div>
+        <label>No. of Pesons: </label>
+        <input type="radio" name="strength" id="strength">1
+        <input type="radio" name="strength" id="strength">2
+        <input type="radio" name="strength" id="strength">3
+        <input type="radio" name="strength" id="strength">4
+        <input type="radio" name="strength" id="strength">Motre than 4</div>
+
+        <div>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" placeholder="Pleade enter your address" rows="3" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="address">Purpose of Staying:</label>
+            <textarea name="address" id="address" placeholder="Pleade enter your reason why you need a room" rows="3" cols="50"></textarea>
+        </div>
+        <input type="submit" id="submit">
+        <input type="reset" id="submit"><br>
+        </p>
+    </form>
+</body>
+
+</html>

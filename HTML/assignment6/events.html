@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>news</title>
+    <style>
+      nav {
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .navbar-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .navbar-links {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .navbar-links li {
+        padding: 10px 15px;
+      }
+
+      .navbar-links a {
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+
+      .navbar-links a:hover {
+        color: #00f0ac;
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(40, 82, 173);
+      }
+      .news-header {
+        border: 1px solid black;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: antiquewhite;
+        box-sizing: border-box;
+      }
+      
+      strong {
+        color: crimson;
+      }
+
+      .bg {
+        background-color: antiquewhite;
+        height: 500px;
+        width: 500px;
+        padding: 23px;
+        display: flex;
+        flex-direction: column;
+      }
+      b{
+        color: rgb(40, 82, 173);
+        font-size: 1.4em;
+        border-bottom: 3px solid crimson;
+        margin: 20px 0 10px 20px;
+      }
+      p{
+        margin: 30px auto;
+        text-align: left;
+      }
+      span{
+        color: grey;
+        font-weight: bolder;
+        margin-left:2em;
+      }
+      .ph img{
+        height: 545px;
+        width: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="seocond-Nav">
+      <div class="navbar-container">
+        <ul class="navbar-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="https://www.nitw.ac.in/cse">Department</a></li>
+          <li><a href="placement.html">Placement</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>EVENTS PAGE</h1>
+    <div class="news-body">
+      <div class="news-header">
+       <div class="ph">
+         <img src="https://www.iitm.ac.in/themes/custom/iitm/assets/images/no_img/seminar_l1/8.png" alt="  " />
+       </div> 
+        <div class="bg">
+          <p>
+            <img height="16px" src="./imgs/location.png" alt="location" />
+            <strong>DATE</strong> <span>23 sep 2024</span>
+          </p>
+          <p>
+            <img height="16px" src="./imgs/back-in-time.png" alt="" />
+            <strong>Time</strong> <span>09:30pm</span>
+          </p>
+          <p>
+            <img height="18px" src="./imgs/destination.png" alt="" />
+            <strong>Venue</strong> <span>Malbiya</span>
+          </p>
+        </div>
+      </div>
+      <b>
+        IIT Madras Strategic Partnership with IIT Ropar opens up new
+        opportunities for IITM BS (Data Science) Degree students</b
+      >
+      <br />
+
+      <span>
+        Press Release:
+      </span>
+      <span>
+        28th Aug 2024 
+      </span>
+      <p>
+
+        Saliency detection methods are crucial in various practical applications,
+        including robot navigation and satellite imagery analysis. However, the
+        effectiveness of current techniques diminishes in low-light environments
+        as they are predominately trained on well-lit image datasets. Addressing
+        this challenge typically involves acquiring a new dataset specifically
+        tailored for low-light conditions, a process that demands meticulous
+        pixel-level annotations and consumes substantial time and resources. In
+        this work, we propose a novel approach that transforms well-lit images
+        into proxy low-light images using classical band-pass filtering techniques
+        in the Fourier domain. Unlike popular deep learning approaches that
+        require learning thousands of parameters and enormous amounts of training
+        data, the proposed transformation is fast, simple and easy to extend to
+        tasks such as low-light depth estimation. Through extensive
+        experimentation, we demonstrate that saliency detection and depth
+        estimation networks trained on our simulated proxy low-light images
+        outperform those trained using conventional methods when applied to real
+        low-light scenarios. This research provides a practical and effective
+        solution for enhancing saliency detection and depth estimation in
+        low-light settings, paving the way for more robust and versatile
+        applications.
+      </p>
+      </div>
+    </body>
+    </html>
+    
